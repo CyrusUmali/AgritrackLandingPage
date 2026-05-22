@@ -242,3 +242,5 @@
   .chatbot-window { width: calc(100vw - 32px); right: 16px; bottom: 88px; height: 420px; }
   .chatbot-fab    { bottom: 20px; right: 16px; }
 }
+
+@keyframes spin { to { transform: rotate(360deg); } }

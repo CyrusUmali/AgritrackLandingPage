@@ -16,7 +16,7 @@ export default function MapSection() {
     <section className="section-wrap map-section">
       <div ref={mapRef} className="reveal map-section__visual">
         <img 
-          src="/images/hero.png" 
+          src="./images/hero.png" 
           alt="Satellite farm map interface showing farm boundaries and weather overlays"
           className="map-section__screenshot"
         />

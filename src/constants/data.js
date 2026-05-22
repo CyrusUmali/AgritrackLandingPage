@@ -133,19 +133,19 @@ export const FAQ_ITEMS = [
 // Carousel slides
 export const CAROUSEL_SLIDES = [
   { label: 'Dashboard Overview', 
-    image: '/images/dashboard.png',
+    image: './images/dashboard.png',
     desc: 'Municipal overview — farm counts, yield totals, sector distribution, and live weather at a glance.',              screen: 'AgriTrack · Dashboard', hue: '140deg' },
   { label: 'Satellite Farm Map', 
-    image: '/images/satellite.png',
+    image: './images/satellite.png',
     desc: 'Every registered farm plotted on satellite imagery with polygon boundaries, crop type, and weather data.',         screen: 'AgriTrack · Mapa',      hue: '155deg' },
   { label: 'Production Analytics',
-    image: '/images/analytics.png',
+    image: './images/analytics.png',
     desc: 'Per-farm yearly and monthly yield charts, exportable as Excel or PDF for official DA reporting.',                  screen: 'AgriTrack · Mga Ani',   hue: '35deg'  },
   { label: 'Barangay Heat Map', 
-    image: '/images/heatmap.png',
+    image: './images/heatmap.png',
     desc: 'Color-coded choropleth map showing yield performance across every barangay — high, medium, and low zones.',        screen: 'AgriTrack · Barangay',  hue: '200deg' },
   { label: 'Farm Details & Records',
-    image: '/images/detail.png',
+    image: './images/detail.png',
     desc: 'Full farm profile — owner, location, sector, area, crop list, and production history all in one panel.',           screen: 'AgriTrack · Sakahan',   hue: '280deg' },
 ];
 

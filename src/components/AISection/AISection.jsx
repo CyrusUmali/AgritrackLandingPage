@@ -77,7 +77,7 @@ export default function AISection() {
                 <div className="ai-phone__notch" />
                 <div className="ai-phone__screen">
                   <img 
-                    src={`/images/${screen}.png`} 
+                    src={`./images/${screen}.png`} 
                     alt={SCREENS.find(s => s.id === screen)?.label}
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
