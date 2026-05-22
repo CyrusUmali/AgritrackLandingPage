@@ -1,0 +1,135 @@
+.contact-wrap { background: var(--white); border-top: 1px solid var(--border); }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-desc {
+  font-size: 15px;
+  color: var(--text-2);
+  line-height: 1.75;
+  max-width: 380px;
+  margin-bottom: 40px;
+  margin-top: 4px;
+}
+
+.contact-info { display: flex; flex-direction: column; gap: 20px; }
+.contact-info__item { display: flex; align-items: flex-start; gap: 14px; }
+.contact-info__icon {
+  width: 38px; height: 38px; border-radius: 10px;
+  background: var(--green-6); border: 1px solid var(--green-5);
+  display: grid; place-items: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+.contact-info__label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-3); margin-bottom: 3px; }
+.contact-info__val   { font-size: 14px; color: var(--text); line-height: 1.5; }
+
+/* Form */
+.contact-form-wrap {
+  background: var(--off);
+  border: 1px solid var(--border);
+  border-radius: var(--rl);
+  padding: 36px;
+}
+.contact-form { display: flex; flex-direction: column; gap: 20px; }
+
+.cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.cf-field { display: flex; flex-direction: column; gap: 6px; }
+.cf-label { font-size: 12px; font-weight: 600; color: var(--text); }
+.cf-optional { color: var(--text-3); font-weight: 400; }
+
+.cf-input {
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  width: 100%;
+}
+.cf-input:focus { border-color: var(--green-4); box-shadow: 0 0 0 3px rgba(106,171,133,0.15); }
+.cf-input::placeholder { color: var(--text-3); }
+.cf-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239a9990' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+.cf-textarea { resize: vertical; min-height: 120px; line-height: 1.6; }
+
+.cf-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.cf-note { font-size: 12px; color: var(--text-3); max-width: 280px; line-height: 1.6; }
+.cf-submit { font-size: 15px; padding: 13px 28px; white-space: nowrap; }
+.cf-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.cf-success {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--green-6);
+  border: 1px solid var(--green-5);
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+.cf-success__icon {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--green); display: grid; place-items: center; flex-shrink: 0;
+}
+.cf-success__title { font-size: 14px; font-weight: 600; color: var(--green); }
+.cf-success__sub   { font-size: 12px; color: var(--green-3); margin-top: 2px; }
+
+/* Map embed */
+.map-embed-section { border-top: 1px solid var(--border); }
+.map-embed-header {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.map-embed-header__text p { font-size: 15px; color: var(--text-2); line-height: 1.75; margin-top: 4px; }
+
+.map-embed-wrap { position: relative; border-top: 1px solid var(--border); }
+
+.map-embed-card {
+  position: absolute;
+  top: 20px; left: 60px;
+  z-index: 10;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  max-width: 300px;
+}
+.map-embed-card__icon { font-size: 22px; margin-top: 2px; }
+.map-embed-card__name { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+.map-embed-card__addr { font-size: 12px; color: var(--text-2); margin-bottom: 4px; }
+.map-embed-card__hours { font-size: 11px; color: var(--text-3); }
+.map-embed-card__open  { color: #16a34a; font-weight: 600; }
+
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .cf-row { grid-template-columns: 1fr; }
+  .map-embed-header { padding-top: 40px; }
+  .map-embed-card { left: 16px; top: 12px; max-width: calc(100% - 32px); }
+}
