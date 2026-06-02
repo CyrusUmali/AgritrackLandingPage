@@ -22,8 +22,7 @@
   background: var(--white);
   border: 1px solid var(--border);
   display: grid;
-  place-items: center;
-  font-family: 'Instrument Serif', serif;
+  place-items: center; 
   font-size: 1.2rem;
   color: var(--green);
   margin-bottom: 20px;

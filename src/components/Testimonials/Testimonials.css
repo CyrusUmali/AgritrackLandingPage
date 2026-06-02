@@ -35,8 +35,7 @@
   border-color: transparent;
 }
 
-.testi-card__quote {
-  font-family: 'Instrument Serif', serif;
+.testi-card__quote { 
   font-size: 3.5rem;
   line-height: 0.8;
   color: var(--green-5);
