@@ -65,29 +65,42 @@ export default function Hero() {
       </div>
  
       <div className="hero__right">
-        <div className="hero__badge hero__badge--top reveal">
-          <div className="hero__badge-icon hero__badge-icon--green">🌾</div>
-          <div>
-            <div className="hero__badge-label">Annual yield</div>
-            <div className="hero__badge-val">502 kg tracked</div>
-          </div>
-        </div>
+  <div className="hero__right-glow" aria-hidden="true" />
 
-        <div className="hero__badge hero__badge--bot reveal">
-          <div className="hero__badge-icon hero__badge-icon--amber">🌡️</div>
-          <div>
-            <div className="hero__badge-label">Live weather</div>
-            <div className="hero__badge-val">35°C · San Pablo</div>
-          </div>
-        </div>
+  <div className="hero__frame">
+    <img
+      ref={imgRef}
+      src="./images/hero_2.png"
+      alt="AgriTrack Dashboard"
+      className="reveal delay-1 hero__img"
+    />
+    <span className="hero__scan" aria-hidden="true" />
+    <span className="hero__pin" aria-hidden="true">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8z" fill="#fff"/>
+        <circle cx="12" cy="10" r="3.2" fill="#1c3d2c"/>
+      </svg>
+    </span>
+  </div>
 
-        <img
-          ref={imgRef}
-          src="./images/hero.png"
-          alt="AgriTrack Dashboard"
-          className="reveal delay-1 hero__img"
-        />
-      </div>
+  <div className="hero__badge hero__badge--top reveal">
+    <span className="hero__badge-bar hero__badge-bar--green" />
+    <div>
+      <div className="hero__badge-label">Annual yield</div>
+      <div className="hero__badge-val">502 kg tracked</div>
+    </div>
+  </div>
+
+  <div className="hero__badge hero__badge--bot reveal">
+    <span className="hero__badge-bar hero__badge-bar--amber" />
+    <div>
+      <div className="hero__badge-label">Live weather</div>
+      <div className="hero__badge-val">35°C · San Pablo</div>
+    </div>
+  </div>
+</div>
+
+
     </section>
   );
 }
